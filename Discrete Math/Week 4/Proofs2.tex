@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{scrextend}
+
+\newcommand{\baseLeft}{(m+n)^2}
+\newcommand{\baseRight}{m^2+n^2}
+\newcommand{\baseFormal}{\forall (m, n) \in \mathbb{Z}, \baseLeft=\baseRight}
+\begin{document}
+\section*{Assignment - Question 2}
+Disprove by giving a counter example:\\
+Formal restatement:\\
+$\forall (m, n) \in \mathbb{Z}, \baseLeft=\baseRight $
+\begin{proof}
+  \begin{addmargin}{1em}
+    In this proof, I will prove that $\baseFormal$ is invalid by counterexample.\\\\
+    Let m = 1.\\
+    Let n = 2.\\\\
+    Substituting these values into $\baseLeft$ provides $(1+2)^2 = 3^2 = 9$\\
+    Substituting these values into $\baseRight$ provides $1^2+2^2 = 1+4 = 5$ \\
+    As $9 \neq 5$, $\baseFormal$ is invalid.\\
+  \end{addmargin}
+  This concludes the proof.
+\end{proof}
+\end{document}
