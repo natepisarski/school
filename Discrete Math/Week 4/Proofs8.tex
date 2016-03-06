@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{scrextend}
+\begin{document}
+\section*{Assignment - Question 8}
+Prove:\\
+The sum of any five consecutive integers is divisible by 5.\\
+\textbf{Formal Restatement:}
+$\forall x \in \mathbb{Z}, (x+(x+1)+(x+2)+(x+3)+(x+4))|5$
+\begin{proof}
+  \begin{addmargin}{1em}
+  Consider that consecutive integers proceeding x are defined by their position from x.\\
+  Thus, the statement $(x+(x+1)+(x+2)+(x+3)+(x+4))$ describes any 5 consecutive integers.\\\\
+  This statement simplifies into $5x+10$.\\
+  As this generic expression describes any 5 consecutive integers, the form $5x+10$ will always be the result.\\
+  As 5|5 and 10|5, the resulting integer is divisible by 5 in every case.\\
+  This argument is valid.
+  \end{addmargin}
+  \textbf{done}
+\end{proof}
+\end{document}

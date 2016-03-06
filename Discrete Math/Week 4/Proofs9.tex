@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{scrextend}
+\begin{document}
+\section*{Assignment - Question 9}
+Prove by Cases:\\
+For all integers n, $n^2-3n+7$ is odd.\\
+\textbf{Formal Restatement:}
+$\forall n \in \mathbb{Z}, n is odd$
+\begin{proof}
+  \begin{addmargin}{1em}
+    Consider that for any value of n, it is either even or odd. This is the only cause of variation in the evaluation of this expression. I will proceed by cases.\\
+    \subsection*{Case Even}
+    \begin{addmargin}{1em}
+      Let x be any even integer.\\
+      Substituting the definition of an even number (2k where k is an integer) into x for this expression evaluates to:\\
+      $4k^2-6k+7$. Rewriting it as $2(2k^2-3k+3)+1$, an equivalent form, satisfies the conditions of an odd number.\\
+    \end{addmargin}
+    \subsection*{Case Odd}
+    \begin{addmargin}{1em}
+      Let x be any odd integer.\\
+      Substituting the definition of an odd number (2k+1 where k is an integer) into x for the given expression evaluates to:\\
+      $4k^2-2k+5$, an equivalent form of $12k^2-6k+14+1$.\\
+      This can be written with the equivalent statement: $2(6k^2-3k+6)+1$, which satisfies the definition of an odd number.\\\\
+    \end{addmargin}
+    In all possible cases, the argument is true. The argument is valid.\\ \textbf{done}
+  \end{addmargin}
+\end{proof}
+\end{document}

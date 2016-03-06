@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{scrextend}
+\begin{document}
+\section*{Assignment - Question 5}
+Prove:\\
+The difference of the squares of any two consecutive integers is odd.\\
+\textbf{Formal Restatement:}\\
+Let Q(x) evaluate to true if $(x+1)^2 - x^2$ is odd.\\
+$x \in \mathbb{Z}, Q(x)$\\
+\begin{proof}
+  \begin{addmargin}{1em}
+    Consider that given any two consecutive integers, one will always be even and one will always be odd.\\
+    Considering the definition of even and odd numbers, $(x+1)^2 - x^2$ is equivalent to:\\
+    \indent $(2k+1)^2 - 4k^2$, where k is an integer.\\
+    Expanded, this statement reads $4k^2+4k+1-4k^2$.\\
+    This statement is equivalent to 2(2k)+1.\\
+    As the product of 2 and any integer plus 1 is odd, and the multiplication of two integers (2 and k) is an integer, this form shows that $(x+1)^2-x^2$ is always odd.\\
+  \end{addmargin}
+  The argument is valid. This concludes the proof.
+\end{proof}
+\end{document}

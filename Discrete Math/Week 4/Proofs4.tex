@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{scrextend}
+\begin{document}
+\section*{Question 4}
+Disprove:\\
+There exists an integer \textit{m} $\ge$ 3 so $m^3-1$ is prime.\\\\
+\textbf{Formal restatement}\\
+Let the predicate be Q(x) evaluate true if x is prime.
+$\exists m \in \{a | a \ge 3\}, Q(x)$
+\begin{proof}
+  \begin{addmargin}{1em}
+    Let the predicate be Q(x) evaluate true if x is prime.\\
+    Let the predicate C(x) evaluate true if x is composite.\\
+    In this proof I will disprove $\exists m \in \{a | a \ge 3\}, Q(x)$ by proving its negation:\\
+    $\forall m \in \{a | a \ge 3\}, C(m)$\\
+    m can be only even or odd. I will now proceed by cases. \\
+    \subsection*{Case 1 - odd}
+    \begin{addmargin}{1em}
+      If x is odd, $m^3-1$ will result in an even number. Even numbers above 2 are divisible by 2 and another number, and as such are all composite.\\
+    \end{addmargin}
+    \subsection*{Case 2 - even}
+    \begin{addmargin}{1em}
+      If m is even, $m^3-1$ will always be divisible by $(m-1)$. \\
+      As $1(m-1) \neq (m^3-1)$ for m $\ge$ 3, there is always another factor greater than 1, making $(m^3-1)$ composite.\\\\
+    \end{addmargin}
+    As this accounts for every possibility of m, the negation of $\exists m \in \{a | a \ge 3\}, Q(m)$ is true in every case, meaning that the original statement is false in every case. This statement is invalid. This concludes the proof.
+  \end{addmargin}
+\end{proof}
+\end{document}
